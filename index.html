@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div id="bg"></div>
+    <div class="container">
+        <nav>
+            <div class="symbol">
+                <span>&times;</span>
+                <div class="circle"></div>
+            </div>
+            <button class="turn"><span id="turn">x</span>Turn</button>
+            <button id="reset"><span>&circlearrowright;</span></button>
+        </nav>
+        <main class="board">
+            <div class="box b1" id="01"></div>
+            <div class="box b2" id="02"></div>
+            <div class="box b3" id="03"></div>
+            <div class="box b4" id="04"></div>
+            <div class="box b5" id="05"></div>
+            <div class="box b6" id="06"></div>
+            <div class="box b7" id="07"></div>
+            <div class="box b8" id="08"></div>
+            <div class="box b9" id="09"></div>
+        </main>
+
+        <footer class="result">
+            <div class="box1 you"><p><span>&times;</span>(You)</p><p1 id="x-wins">0</p1></div>
+            <div class="box1 ties"><p>Ties</p><p2 id="draws">0</p2></div>
+            <div class="box1 ply"><div class="box2">
+                <div class="circle"></div>Ply2
+            </div><p3 id="o-wins">0</p3></div>
+        </footer>
+
+    </div> 
+    <script src="main.js"></script>
+</body>
+</html>
